@@ -1312,7 +1312,7 @@ int main(){
 
         p=i+p;
         }
-
+        
         for(j=1;j<=i;j++){
             if(i%2!=0){ 
                printf("%d ",m--);
