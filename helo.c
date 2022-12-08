@@ -1298,31 +1298,31 @@
 //    }
 //}
 
-#include <stdio.h>
-int main(){
-    int i,j,lim=5,p=0,m;
-
-    for(i=1;i<=lim;i++){
-       
-       
-        if(i%2!=0){
-
-        m=p+i;
-        }else{
-
-        p=i+p;
-        }
-        
-        for(j=1;j<=i;j++){
-            if(i%2!=0){ 
-               printf("%d ",m--);
-            }else{
-               printf("%d ",p++);
-            }
-
-        }printf("\n");
-        if(i%2==0){
-        p--;
-        }
-    }
-}
+//#include <stdio.h>
+//int main(){
+//    int i,j,lim=5,p=0,m;
+//
+//    for(i=1;i<=lim;i++){
+//       
+//       
+//        if(i%2!=0){
+//
+//        m=p+i;
+//        }else{
+//
+//        p=i+p;
+//        }
+//        
+//        for(j=1;j<=i;j++){
+//            if(i%2!=0){ 
+//               printf("%d ",m--);
+//            }else{
+//               printf("%d ",p++);
+//            }
+//
+//        }printf("\n");
+//        if(i%2==0){
+//        p--;
+//        }
+//    }
+//}
