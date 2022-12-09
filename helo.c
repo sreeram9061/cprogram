@@ -1419,25 +1419,25 @@
 
 
 
-#include <stdio.h>
-
-int main(){
-    int i,j,lim=7,arr[100],vlaue;
-
-    printf("Enter 7 elements in the array \n");
-    for(i=0;i<lim;i++){
-        scanf("%d",&arr[i]);
-    }
-    printf("Enter a number ");
-    scanf("%d",&vlaue);
-    for(i=0;i<lim-1;i++){
-        for(j=i+1;j<lim;j++){
-            if(arr[i]+arr[j]==vlaue){
-                printf("%d + %d  \n",arr[i],arr[j]);
-            }
-
-        }
-    }
-
-    
-}
+//#include <stdio.h>
+//
+//int main(){
+//    int i,j,lim=7,arr[100],vlaue;
+//
+//    printf("Enter 7 elements in the array \n");
+//    for(i=0;i<lim;i++){
+//        scanf("%d",&arr[i]);
+//    }
+//    printf("Enter a number ");
+//    scanf("%d",&vlaue);
+//    for(i=0;i<lim-1;i++){
+//        for(j=i+1;j<lim;j++){
+//            if(arr[i]+arr[j]==vlaue){
+//                printf("%d + %d  \n",arr[i],arr[j]);
+//            }
+//
+//        }
+//    }
+//
+//    
+//}
