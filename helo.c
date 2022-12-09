@@ -1441,3 +1441,42 @@
 //
 //    
 //}
+
+
+//#include <stdio.h>
+//
+//int main(){
+//    int i,j,lim=7,arr[100]={1,2,3,4,15,8,9},flag,l=42;
+//
+//    for(i=0;i<lim;i++){
+//        flag=0;
+//        if(arr[i]==1)
+//        {
+//            flag=1;
+//        }
+//        
+//        for(j=2;j<arr[i];j++){
+//            if( arr[i]%j==0){
+//                flag=1;
+//                break;
+//            }
+//        }if(flag==0){
+//            for(j=i;j<lim;j++){
+//                arr[j]=arr[j+1];
+//            }i--;
+//            lim--;
+//        }
+//    }
+//   
+//    
+//
+//    for(i=0;i<lim;i++){
+//        if(arr[i]%2!=0){
+//            arr[i]=l;
+//            printf("%c ",arr[i]);
+//        }else{
+//            printf("%d ",arr[i]);
+//        }
+//    }
+//}
+
