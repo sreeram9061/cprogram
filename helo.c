@@ -1319,10 +1319,77 @@
 //            }else{
 //               printf("%d ",p++);
 //            }
-//1
+//
 //        }printf("\n");
 //        if(i%2==0){
 //        p--;
 //        }
 //    }
 //}
+
+//#include <stdio.h>
+//
+//int main(){
+//    int i,j,lim=7,count,m,arr[100],ar[100];
+//
+//
+//    printf("Enter 7 number :\n");
+//    for(i=0;i<lim;i++){
+//        scanf("%d",&arr[i]);
+//        ar[i]=-1;
+//        
+//    }
+//   
+//
+//    for(i=0;i<lim;i++){
+//        count=1;
+//        for(j=0;j<lim;j++){
+//            if(i!=j && arr[i]==arr[j]){
+//                count++;
+//                ar[j]=0;
+//            }
+//        }ar[i]=count;
+//
+//    }
+//
+//
+//    for(i=0;i<lim;i++){
+//        if(ar[i]>0){
+//            printf("%d is %d times repeated\n",arr[i],ar[i]);
+//        }
+//        
+//    }
+//}
+
+
+//write a program to insert a value in the aray (sorted list).
+
+#include <stdio.h>
+
+int main(){
+    int i,j,lim=5,array[100]={1,2,6,7,12},num;
+
+    printf("enter a number :");
+    scanf("%d",&num);
+
+    
+
+    for(i=0;i<lim;i++){
+        if(num<array[i]){
+            for(j=lim-1;j>=i;j--){
+                array[j+1]=array[j];
+            }array[i]=num;
+            lim++;
+            break;
+        }
+    }
+
+    for(i=0;i<lim;i++){
+        printf("%d ",array[i]);
+    }
+}
+
+
+
+
+
