@@ -1390,34 +1390,54 @@
 //    }
 //}
 
+//#include <stdio.h>
+//
+//int main(void){
+//    int i,j,lim=7,arr[100],temp;
+//
+//    for(i=0;i<lim;i++){
+//        scanf("%d",&arr[i]);
+//    }
+//
+//    for(i=lim-1;i>=0;i--){
+//        if(arr[i]==0){
+//            for(j=0;j<=i;j++){
+//                if(arr[j]!=0){
+//                    temp=arr[i];
+//                    arr[i]=arr[j];
+//                    arr[j]=temp;
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//
+//   for(i=0;i<lim;i++){
+//        printf("%d ",arr[i]);
+//    } 
+//}
+
+
+
 #include <stdio.h>
 
-int main(void){
-    int i,j,lim=7,arr[100],temp;
+int main(){
+    int i,j,lim=7,arr[100],vlaue;
 
+    printf("Enter 7 elements in the array \n");
     for(i=0;i<lim;i++){
         scanf("%d",&arr[i]);
     }
-
-    for(i=0;i<lim;i++){
-        if(arr[i]==0){
-            for(j=lim-1;j>=i;j--){
-                if(arr[j]!=0){
-                    temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                    break;
-                }
+    printf("Enter a number ");
+    scanf("%d",&vlaue);
+    for(i=0;i<lim-1;i++){
+        for(j=i+1;j<lim;j++){
+            if(arr[i]+arr[j]==vlaue){
+                printf("%d + %d  \n",arr[i],arr[j]);
             }
+
         }
     }
 
-   for(i=0;i<lim;i++){
-        printf("%d ",arr[i]);
-    } 
+    
 }
-
-
-
-
-
