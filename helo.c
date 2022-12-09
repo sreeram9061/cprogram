@@ -1364,29 +1364,57 @@
 
 //write a program to insert a value in the aray (sorted list).
 
+//#include <stdio.h>
+//
+//int main(){
+//    int i,j,lim=5,array[100]={1,2,6,7,12},num;
+//
+//    printf("enter a number :");
+//    scanf("%d",&num);
+//
+//    
+//
+//    for(i=0;i<lim;i++){
+//        if(num<array[i]){
+//            for(j=lim-1;j>=i;j--){
+//                array[j+1]=array[j];
+//            }array[i]=num;
+//            lim++;
+//            
+//            break;
+//        }
+//    }
+//
+//    for(i=0;i<lim;i++){
+//        printf("%d ",array[i]);
+//    }
+//}
+
 #include <stdio.h>
 
-int main(){
-    int i,j,lim=5,array[100]={1,2,6,7,12},num;
-
-    printf("enter a number :");
-    scanf("%d",&num);
-
-    
+int main(void){
+    int i,j,lim=7,arr[100],temp;
 
     for(i=0;i<lim;i++){
-        if(num<array[i]){
+        scanf("%d",&arr[i]);
+    }
+
+    for(i=0;i<lim;i++){
+        if(arr[i]==0){
             for(j=lim-1;j>=i;j--){
-                array[j+1]=array[j];
-            }array[i]=num;
-            lim++;
-            break;
+                if(arr[j]!=0){
+                    temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                    break;
+                }
+            }
         }
     }
 
-    for(i=0;i<lim;i++){
-        printf("%d ",array[i]);
-    }
+   for(i=0;i<lim;i++){
+        printf("%d ",arr[i]);
+    } 
 }
 
 
