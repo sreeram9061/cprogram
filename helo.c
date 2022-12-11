@@ -1480,3 +1480,182 @@
 //    }
 //}
 
+
+//#include <stdio.h>
+//int main(){
+//    int i,j,lim=7,arr[100]={7,5,6,8,9,16,8},flag,m;
+//    
+//    for(i=0;i<lim;i++){
+//        flag=0;
+//        for(j=2;j<arr[i];j++){
+//            if(arr[i]%j==0){
+//                flag=1;
+//                break;
+//            }
+//        }if(flag==0){
+//                
+//            for(j=1;j<=2;j++){
+//           
+//                for(m=i+1;m<lim-1;m++){
+//                    arr[m]=arr[m+1];
+//                }
+//            }
+//                lim--;
+//            
+//        }
+//    }
+//
+//    for(i=0;i<lim;i++){
+//        printf("%d ",arr[i]);
+//    }
+//    
+//}
+
+
+//#include <stdio.h>
+//
+//int main(){
+//    int i,j,lim=9,arr[100]={1,4,7,8,5,9,6,4,8},m;
+//    
+//                        
+//    for(i=0;i<lim;i++){
+//        if(arr[i]%2==0 && i!=lim-1){
+//
+//            for(m=0;m<2;m++){
+//               for(j=i+1;j<lim-1;j++){
+//                   arr[j]=arr[j+1];
+//               }lim--;
+//            }
+//        }
+//    }
+//    
+//
+//    for(i=0;i<lim;i++){
+//        printf("%d ",arr[i]);
+//    }
+//}
+
+//#include <stdio.h>
+//
+//int main(){
+//    int i,j,lim=7,arr[100]={3,4,3,5,5,2,3},flag,sum=0;
+//
+//    for(i=0;i<lim;i++){
+//        flag=0;
+//        for(j=0;j<lim;j++){
+//            if(i!=j && arr[i]==arr[j]){
+//                flag=1;
+//                break;
+//            }
+//        }if(flag==0){
+//            sum+=arr[i];
+//        }
+//    }
+//    printf("%d ",sum);
+//}
+
+//#include <stdio.h>
+//
+//int main(){
+//    int i,j,lim=6;
+//
+//    for(i=1;i<=lim*2-1;i++){
+//        for(j=1;j<=lim*2-1;j++){
+//            if(i==j || j==(lim*2-1)-(i-1) ){
+//                printf("* ");
+//            }else{
+//                printf("  ");
+//            }
+//
+//        }printf("\n");
+//    }
+//}
+
+//#include <stdio.h>
+//int main(){
+//    int i,j,lim=5,p;
+//
+//    for(i=1;i<=lim;i++){
+//        p=i;
+//        for(j=1;j<=lim;j++){
+//            if(j>i-1){
+//                printf("%d ",p);
+//                p=p+i;
+//            }else{
+//                printf(" ");
+//            }
+//        }printf("\n");
+//    }
+//}
+
+//#include<stdio.h>
+//int main(){
+//    int i,j,lim=4,m;
+//
+//    for(i=1;i<=lim*2;i++){
+//        if(i<=lim){
+//            m=i*2-1;
+//        }else{
+//            m=((lim*2)-(i-1))*2-1;
+//        }
+//        for(j=1;j<=m;j++){
+//           if(j%2==0){
+//            printf("*");
+//           }else{
+//            printf("%d",i);
+//           }
+//        }printf("\n");
+//    }
+//
+//    
+//}
+
+//#include<stdio.h>
+//int main(){
+//    int i,j,lim=5;
+//    
+//    for(i=1;i<=lim;i++){
+//        for(j=1;j<=lim*2-1;j++){
+//            if(j==lim-(i-1) || j==lim+(i-1)){
+//                printf("* ");
+//            }else if(j>lim-(i-1)&& j<lim+(i-1)){
+//                printf("_ ");
+//            }else{
+//                printf("  ");
+//            }
+//        }printf("\n");
+//    }
+//
+//    
+//}
+
+
+#include<stdio.h>
+int main(){
+    int i,j,lim=5,p;
+
+    for(i=1;i<=lim;i++){
+        p=i;
+        for(j=1;j<=lim;j++){
+            if(j>=i){
+                printf("%d ",p);
+                p=p+i;
+
+            }else{
+                printf(" ");
+
+            }
+
+        }printf("\n");
+    }
+
+}
+
+
+
+//#include<stdio.h>
+//int main(){
+//    int i,j,lim;
+//
+//    
+//}
